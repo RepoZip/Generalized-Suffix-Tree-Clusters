@@ -652,20 +652,12 @@ void insert_document_api(char string_input[ MAX_LENGTH ], int docId) {
 
 int main() {
 
-    //    cout << "Normally, suffix trees require that the last\n"
-    //            << "character in the input string be unique.  If\n"
-    //            << "you don't do this, your tree will contain\n"
-    //            << "suffixes that don't end in leaf nodes.  This is\n"
-    //            << "often a useful requirement. You can build a tree\n"
-    //            << "in this program without meeting this requirement,\n"
-    //            << "but the validation code will flag it as being an\n"
-    //            << "invalid tree\n\n";
-    //    cout << "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<";
-    //    Suffix active(0, 0, -1); // The initial active prefix
-
-
-
-    //Reading part start
+ /**Read me*/
+//To insert document
+    //1.set cluster id into the required cluster id
+    //2.insert_document_api(string_in, document id);
+    //3.call refresh() to begin a new cluster
+    //change cluster id again and proceed 1 to 3,,,,,
     int p;
     
     for (int y = 0; y < 2; y++){
@@ -718,116 +710,6 @@ int main() {
     search_by_entity(1,1);
       search_by_entity(1,2);
     
-    //Reading part end       
-
-    //        terminators.push_back((char) (x + 33));
-    //
-    //        cout << "last character for "
-    //                << x
-    //                << " is "
-    //                << string_in[11]
-    //                << " ";
-    //
-    //        for (int g = 0; g <= 11; g++) {
-    //
-    //            cout << string_in[g];
-    //        }
-    //        cout << "\n";
-    //        store(active, string_in);
-    //    }
-    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    //        store(active, "aaaaaae$");
-    //        terminators.push_back('$');
-    //        store(active, "aaaaaax#");
-    //        terminators.push_back('#');
-    //        store(active, "aaaaaai)");
-    //        terminators.push_back(')');
-    //        store(active, "aaaaaap*");
-    //        terminators.push_back('*');
-    //        store(active, "aaaaaak-");
-    //        terminators.push_back('-');
-    //        store(active, "aaaaaam=");
-    //        terminators.push_back('=');
-    //    store(active, "abcde$");
-    //    terminators.push_back('$');
-    //    dump_edges(N);
-    //    store(active, "abde#");
-    //    terminators.push_back('#');
-    //    dump_edges(N);
-    //    dump_edges(N);
-    //:::::::::::::::::::::::::::::::::::::::
-    //     store(active, "aaavaaaa^");
-    //    terminators.push_back('^');
-    //    store(active, "aaaanaaa*");
-    //    terminators.push_back('#');
-    //     store(active, "haaaaa(");
-    //    terminators.push_back('(');
-    //    store(active, "gaaaaab-");
-    //    terminators.push_back('-');
-    // store(active,"y");
-    //dump_edges(N);
-    //    store_eligible_entities();
-    //    show(N);
-
-    //    for (int u = 0; u < 100; u++) {
-    //
-    //        insert_document(active, "aaaaaaaaa$", u);
-    //    }
-
-    
-   // insert_document_api((char*) "axy$", 2);
-    // insert_document_api((char*)"ababwwwwwwwwwwwwwwww$", 2);
-    // insert_document_api("aab$", 2);
-    //     // show(N);
-    //              search_by_entity(1);
-    //                      search_by_entity(2);
-
-
-
-    //    cout << "NOW WE ARE GOING TO SEARCH BY ENTITIES"
-    //            << "\n";
-    //    for (int u = 1; u < 3; u++) {
-    //        cout << "document number "
-    //                << u
-    //                << " is: ";
-    //        search_by_entity(u);
-    //        cout << "\n";
-    //    }
-    // search('$');
-    //search('$');
-    //    while (true) {
-    //        cout << "Enter string: " << flush;
-    //
-    //        cin.getline(string_input, 99);
-    //        strcat(T, string_input);
-    //        N = strlen(T) - 1;
-    //
-    //
-    //
-    //        //
-    //        // The active point is the first non-leaf suffix in the
-    //        // tree.  We start by setting this to be the empty string
-    //        // at node 0.  The AddPrefix() function will update this
-    //        // value after every new prefix is added.
-    //        //
-    //
-    //        for (int i = start; i <= N; i++)
-    //            AddPrefix(active, i);
-    //        //
-    //        // Once all N prefixes have been added, the resulting table
-    //        // of edges is printed out, and a validation step is
-    //        // optionally performed.
-    //        //
-    //        dump_edges(N);
-    //        start = N + 1;
-    //    }
-    //    cout << "Would you like to validate the tree?"
-    //            << flush;
-    //    std::string s;
-    //    getline(cin, s);
-    //    if (s.size() > 0 && s[ 0 ] == 'Y' || s[ 0 ] == 'y')
-    //        validate();
-    //    return 1;
 };
 
 void store(Suffix active, char string_input[ MAX_LENGTH]) {
